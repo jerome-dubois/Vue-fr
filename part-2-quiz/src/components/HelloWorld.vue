@@ -92,10 +92,14 @@
 </template>
 
 <script>
+
 import Counter from "./Counter"
 
 export default {
 	name: "HelloWorld",
+	components: {
+		Counter
+	},
 	data: {
 		title: "OpenClassrooms - Quiz de la section 2"
 	}
