@@ -29,7 +29,7 @@ export default {
 		}
 	},
 	methods: {
-		updateShoppingCart () {
+		updateShoppingCart (quantity) {
 			this.$emit('add-items-to-cart', quantity)
 		}
 	},
