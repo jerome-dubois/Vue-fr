@@ -2,10 +2,6 @@
 export default {
 	name: "MenuItem",
 	props: {
-		addToShoppingCart: {
-			type: Function,
-			required: true
-		},
 		image: {
 			type: Object,
 			required: true
@@ -30,6 +26,11 @@ export default {
 	data() {
 		return {
 			onSale: false
+		}
+	},
+	methods: {
+		updateShoppingCart () {
+			this.$emit('add-items-to-cart', quantity)
 		}
 	},
 	computed: {
